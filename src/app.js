@@ -1,13 +1,13 @@
 
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 // set variables to 'header page'
-var app = {
+const app = {
     title: "Indecision App",
     subtitle: "Blá Blá Blá",
     options: ['One', 'Two']
 };
-var template = (
+const template = (
     <div>
         <h1>{app.title}</h1>
         {app.subtitle && <p>{app.subtitle}</p>}
@@ -20,7 +20,7 @@ var template = (
 );
 
 // object like Json comes
-var user = {
+const user = {
     name: "Caio Alves",
     age: 29
 };
@@ -31,7 +31,7 @@ function getLocation(location) {
     }
 };
 
-var templateTwo = (
+const templateTwo = (
     <div>
         <h1>User Name: {user.name ? user.name : "anonymous"}</h1>
         <p>Age: { ( user.age && user.age >= 29 )   && user.age}</p>

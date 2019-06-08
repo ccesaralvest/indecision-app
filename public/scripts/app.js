@@ -2,9 +2,18 @@
 
 console.log("=============== TESTES ES6 =================");
 
-var nameLet = "Caio";
-nameLet = "Alves";
-console.log('NAMELET:' + nameLet);
+// let nameLet = "Caio";
+// nameLet = "Alves";
+// console.log('NAMELET:' + nameLet)
 
-var nameConst = "Caio";
-console.log('nameConst:' + nameConst);
+
+// const nameConst = "Caio";
+// console.log('nameConst:' + nameConst)
+
+function getPetName() {
+	var petName = 'Hal';
+	return petName;
+}
+
+var petName = getPetName();
+console.log(petName);
