@@ -1,21 +1,27 @@
 "use strict";
 
-// function square(x) {
-//     return x * x;
-// };
-// console.log(square(3))
+var user = {
+    name: "Caio",
+    cities: ["Philadelphia", "New York", "Dublin"],
+    printPlacesLive: function printPlacesLive() {
+        var _this = this;
 
-// const squareArrow = (x) => {
-//     return x * x;
-// };
-
-// const squareArrow = (x) => x * x;
-// console.log(squareArrow(4))
-
-// const getFirstName = (firstName) => {
-//     return firstName.split(" ")[0];
-// }
-var getFirstName = function getFirstName(fullName) {
-  return fullName.split(" ")[0];
+        return this.cities.map(function (citys) {
+            return _this.name + " Has lived in " + citys;
+        });
+    }
 };
-console.log(getFirstName("Caio Alves"));
+console.log(user.printPlacesLive());
+
+var multiplier = {
+    numbers: [1, 2, 3],
+    multiplyBy: 2,
+    multiply: function multiply() {
+        var _this2 = this;
+
+        return this.numbers.map(function (numberOfArray) {
+            return numberOfArray * _this2.multiplyBy;
+        });
+    }
+};
+console.log(multiplier.multiply());
