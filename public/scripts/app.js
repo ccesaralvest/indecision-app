@@ -5,7 +5,7 @@ console.log("APP JS - INIT");
 // JSX
 var template = React.createElement(
     "section",
-    { id: "reactSection", "class": "textSection" },
+    { id: "reactSection", className: "textSection" },
     React.createElement(
         "h1",
         null,
