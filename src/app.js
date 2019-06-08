@@ -2,11 +2,14 @@ console.log("APP JS - INIT")
 
 // JSX
 var template = (
-    <section id="reactSection" className="textSection">
+    <div>
         <h1>Indecision App</h1>
-        <h2>My Second Title with React and JSX</h2>
-        <p>Yeap! write code with JSX its good! React its realy cool, i can do it</p>
-    </section>
+        <p>This is some info</p>
+        <ol>
+            <li>Item onde</li>
+            <li>Item two</li>
+        </ol>
+    </div>
 );
 var appRoot = document.getElementById('app');
 

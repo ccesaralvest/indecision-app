@@ -4,22 +4,31 @@ console.log("APP JS - INIT");
 
 // JSX
 var template = React.createElement(
-    "section",
-    { id: "reactSection", className: "textSection" },
+    "div",
+    null,
     React.createElement(
         "h1",
         null,
         "Indecision App"
     ),
     React.createElement(
-        "h2",
-        null,
-        "My Second Title with React and JSX"
-    ),
-    React.createElement(
         "p",
         null,
-        "Yeap! write code with JSX its good! React its realy cool, i can do it"
+        "This is some info"
+    ),
+    React.createElement(
+        "ol",
+        null,
+        React.createElement(
+            "li",
+            null,
+            "Item onde"
+        ),
+        React.createElement(
+            "li",
+            null,
+            "Item two"
+        )
     )
 );
 var appRoot = document.getElementById('app');
