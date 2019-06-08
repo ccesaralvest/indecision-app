@@ -1,36 +1,10 @@
 "use strict";
 
-console.log("APP JS - INIT");
+console.log("=============== TESTES ES6 =================");
 
-// JSX
-var template = React.createElement(
-    "div",
-    null,
-    React.createElement(
-        "h1",
-        null,
-        "Indecision App"
-    ),
-    React.createElement(
-        "p",
-        null,
-        "This is some info"
-    ),
-    React.createElement(
-        "ol",
-        null,
-        React.createElement(
-            "li",
-            null,
-            "Item onde"
-        ),
-        React.createElement(
-            "li",
-            null,
-            "Item two"
-        )
-    )
-);
-var appRoot = document.getElementById('app');
+var nameLet = "Caio";
+nameLet = "Alves";
+console.log('NAMELET:' + nameLet);
 
-ReactDOM.render(template, appRoot);
+var nameConst = "Caio";
+console.log('nameConst:' + nameConst);
